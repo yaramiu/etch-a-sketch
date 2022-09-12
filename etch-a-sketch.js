@@ -15,3 +15,11 @@ for (let i = 0; i < NUM_OF_ROWS; i++) {
     div.style.border = "1px solid black";
   }
 }
+
+const squareDivNodeList = squareDivContainer.childNodes;
+console.log(squareDivNodeList);
+squareDivNodeList.forEach((squareDiv) => {
+  squareDiv.addEventListener("mouseover", () => {
+    squareDiv.style.backgroundColor = "black";
+  });
+});
